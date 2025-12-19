@@ -3,7 +3,7 @@ title: K-means Python vs C++ (pybind11)
 sdk: docker
 ---
 
-This repository revisits and modernizes a k-means clustering project originally implemented during my EPITECH coursework, adapted here to demonstrate a hybrid Python/C++ (pybind11) approach for performance-critical computation.
+This repository revisits and modernizes a k-means clustering project originally implemented during my EPITECH mathematics coursework, adapted here to demonstrate a hybrid Python/C++ (pybind11) approach for performance-critical computation.
 
 # K-means: Python vs C++ (pybind11)
 
