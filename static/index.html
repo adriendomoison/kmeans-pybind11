@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>K-means: Python vs C++ (pybind11)</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <div class="headerRow">
+          <h1>K-means: Python vs C++ (pybind11)</h1>
+          <div class="headerLinks">
+            <a href="https://github.com/adriendomoison/kmeans-pybind11-demo" target="_blank" rel="noopener">README</a>
+            <a href="/docs" target="_blank" rel="noopener">API docs</a>
+          </div>
+        </div>
+        <p class="subtitle">This project compares the performance of k-means clustering in Python and C++ using pybind11.</p>
+      </header>
+
+      <section class="card">
+        <div class="controls">
+          <div class="field">
+            <label>k (number of clusters)</label>
+            <input id="k" type="number" min="2" step="1" value="25" />
+          </div>
+          <button id="run" class="primary">Run</button>
+        </div>
+        <div class="comparison" id="comparison">—</div>
+      </section>
+
+      <section class="two">
+        <div class="panel" id="panelPy">
+          <div class="panelHeader">
+            <h2>Python</h2>
+            <div class="status" id="statusPy">—</div>
+          </div>
+          <div class="metrics" id="metricsPy">runtime: —</div>
+          <canvas id="plotPy" width="520" height="420"></canvas>
+        </div>
+
+        <div class="panel" id="panelCpp">
+          <div class="panelHeader">
+            <h2>C++ (pybind11)</h2>
+            <div class="status" id="statusCpp">—</div>
+          </div>
+          <div class="metrics" id="metricsCpp">runtime: —</div>
+          <canvas id="plotCpp" width="520" height="420"></canvas>
+        </div>
+      </section>
+
+      <footer class="footer">K-means can converge to different local minima; this project focuses on timing, not identical labels.</footer>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
